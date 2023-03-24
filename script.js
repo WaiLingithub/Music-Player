@@ -22,7 +22,8 @@ for (let i = 0; i < tracks.length; i++) {
   musicContainerTag.textContent = (i + 1).toString() + ". " + musicName;
 
   musicContainerTag.addEventListener("click", () => {
-    playing = i;
+    playingIndex = i;
+    playing = true;
     playSong();
   });
   playListContainerTag.append(musicContainerTag);
